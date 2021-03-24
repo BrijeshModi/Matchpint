@@ -1,15 +1,30 @@
-Task 3:
 
-#### `What is Javascript Promise?`
+
+## `Task 2:`
+
+### `explaination'
+ Created the react app with using babel and webpack and calling react as library to improve performance and cross browser checks.
+ I have created component based design. So in Dataui component is the UI component and data is coming from ExternalAPI component via props.
+ Also in ExternalAPI component i have used exteranl API via fetch.then request method, also used useEffect lifecycle hooks to get the data at UI.
+
+ I have also created local JSON file and in localdata component to show, how can fetch the data from local file and use in the same UI page.
+ with little bit of SCSS styling. just to give flavour.
+
+These all components are called at App component as child and index.html/UI is rendering via App component.
+
+
+## `Task 3:`
+
+### `What is Javascript Promise?`
 -	The Promise object is used for asynchronous computations. A Promise represents a single asynchronous operation that hasn't completed yet but is expected in the future.
 -	A Promise is in one of the three states: 
 1.	pending: initial state, neither fulfilled nor rejected
 2.	fulfilled: meaning that the operation was completed successfully
 3.	rejected: meaning that the operation failed.
-#### `Why are Javascript Promise needed? What Problem do they solve?`
+### `Why are Javascript Promise needed? What Problem do they solve?`
 -	 In order to perform asynchronous operations, callbacks were used previously. But multiple callback functions lead to unmanageable code that was almost impossible to debug. Also it resulted as callback nesting. To solve this issue, promises are used.
 -	Promises allow errors to be passed down the chain and handled in one common place without having to put in layers of manual error handling.
-#### `What is common Promise syntax ?`
+### `What is common Promise syntax ?`
 
 const somethingWasSuccesful = true;
 
@@ -22,3 +37,32 @@ function someAsyncFunction() {
       }
    });
 }
+
+## `Task 1:`
+
+I do understand the code that, once button clicked the data is render via per processData method and set the state of setData with newData.
+also I know the concepts of the Unit testing of TDD via jest but I did not used in react unit testing. I would like to use it. also i have put this test componet in 
+react app and it is working once button clicked the value is multiplyin with multiplyer and push to the newData array which sets the setData state.
+
+const Test = () => {
+  const [data, setData] = React.useState([
+    { value: 2, multiplier: 2 },
+    { value: 3, multiplier: 3 },
+  ]);
+
+  const processData = () => {
+    const newData = [];
+    data.forEach(e => newData.push({ value: e.value * e.multiplier, multiplier: e.multiplier }));
+    setData(newData);
+  };
+  return (
+    <div>
+      {JSON.stringify(data)}
+      <button type="button" onClick={processData}>
+        Run
+      </button>
+    </div>
+  );
+};
+
+export default Test;
