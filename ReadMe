@@ -1,0 +1,24 @@
+Task 3:
+
+#### `What is Javascript Promise?`
+-	The Promise object is used for asynchronous computations. A Promise represents a single asynchronous operation that hasn't completed yet but is expected in the future.
+-	A Promise is in one of the three states: 
+1.	pending: initial state, neither fulfilled nor rejected
+2.	fulfilled: meaning that the operation was completed successfully
+3.	rejected: meaning that the operation failed.
+#### `Why are Javascript Promise needed? What Problem do they solve?`
+-	 In order to perform asynchronous operations, callbacks were used previously. But multiple callback functions lead to unmanageable code that was almost impossible to debug. Also it resulted as callback nesting. To solve this issue, promises are used.
+-	Promises allow errors to be passed down the chain and handled in one common place without having to put in layers of manual error handling.
+#### `What is common Promise syntax ?`
+
+const somethingWasSuccesful = true;
+
+function someAsyncFunction() {
+   return new Promise((resolve, reject){
+      if (somethingWasSuccesful) {
+         resolve();     
+      } else {
+         reject()
+      }
+   });
+}
