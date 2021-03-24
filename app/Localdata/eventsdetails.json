@@ -1,0 +1,26 @@
+[
+ {
+  "id": 1,
+  "country":"England",
+  "team": "London",
+  "sport": "Football"
+ },
+ {
+  "id": 2,
+   "country":"India",
+  "team": "Bombay",
+  "sport": "Cricket"
+ },
+ {
+  "id": 3,
+  "country":"Scotland",
+  "team": "Edinburgh",
+  "sport": "Golf"
+ },
+ {
+  "id": 4,
+  "country":"Germany",
+  "team": "Berlin",
+  "sport": "MotorRace"
+ }
+]

@@ -1,0 +1,13 @@
+$base-color:#caeecb;
+$font-color: black;
+$body-font:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+body{
+background-color: $base-color;
+color:$font-color;
+font-family: $body-font;
+text-align: center;
+}
+h2{
+ color: rgb(43, 40, 245);
+}
