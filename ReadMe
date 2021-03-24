@@ -3,6 +3,15 @@
 ## `Task 2:`
 
 ### `explaination'
+
+### `How to Run App:`
+1.	Clone the repository
+2.	Open project in VS Code
+3.	Run `npm Install` command webapp level directory
+4.	Once node module update
+5.	Run the `npm run start` command to run the app.
+6.	App will open in browser.
+ 
  Created the react app with using babel and webpack and calling react as library to improve performance and cross browser checks.
  I have created component based design. So in Dataui component is the UI component and data is coming from ExternalAPI component via props.
  Also in ExternalAPI component i have used exteranl API via fetch.then request method, also used useEffect lifecycle hooks to get the data at UI.
